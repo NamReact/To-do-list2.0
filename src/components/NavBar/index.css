@@ -1,0 +1,6 @@
+.navbar-container {
+  height: 100%;
+  width: 70px;
+  background-color: var(--blue);
+  overflow: scroll;
+}
