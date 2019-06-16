@@ -9,9 +9,8 @@ import {
 } from "react-router-dom";
 import "./index.css";
 
-import NavBar from "../../components/NavBar/index";
-
 import Login from "../LoginPage/index";
+import Dashboard from "../Dashboard/index";
 
 class App extends React.Component {
   constructor(props) {
@@ -23,7 +22,6 @@ class App extends React.Component {
   }
 
   setToken = token => {
-    console.log(token);
     this.setState({ token });
   };
 
@@ -31,15 +29,22 @@ class App extends React.Component {
     return (
       <div className="app-container">
         <Router>
-          <Switch>
-            {this.state.token && <Redirect from="/" to="/dashboard" />}
+          {this.state.token && <Redirect from="/" to="/dashboard" />}
+          <Route
+            path="/"
+            exact
+            render={() => <Login setToken={this.setToken} />}
+          />
+
+          {this.state.token ? (
             <Route
-              path="/"
+              path="/dashboard"
               exact
-              render={props => <Login setToken={this.setToken} />}
+              render={() => <Dashboard token={this.state.token} />}
             />
-            <Route path="/dashboard" exact component={NavBar} />
-          </Switch>
+          ) : (
+            <Redirect to="/" />
+          )}
         </Router>
 
         {/*  <NavBar /> */}
