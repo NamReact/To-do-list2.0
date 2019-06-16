@@ -35,7 +35,7 @@ class Login extends React.Component {
   };
 
   emailValidation = email => {
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@(([[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email));
   };
 
@@ -111,11 +111,12 @@ class Login extends React.Component {
       await axios.post("http://localhost:3001/user/forgot-password", {
         email: this.state.input.email
       });
+      this.setPopup();
+      return;
     } catch (error) {
       if (error.response.status === 404) {
         this.setState({ wrongEmail: true, wrongEmailForgotPassword: true });
       }
-      console.log(error.message);
     }
   };
 
@@ -148,7 +149,7 @@ class Login extends React.Component {
             className="login-input-label"
             style={this.state.wrongEmail ? { color: "#F26C82" } : null}
           >
-            EMAIL{" "}
+            EMAIL
             {this.state.wrongEmail
               ? this.state.wrongEmailForgotPassword
                 ? " doesn't exist"

@@ -16,7 +16,7 @@
   background-color: #4b5391;
   margin: auto;
   border-radius: 5px;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
   color: white;
   padding: 40px;
   box-sizing: border-box;
@@ -125,7 +125,7 @@
   cursor: pointer;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .login-button:hover {
@@ -221,4 +221,11 @@ span:hover {
 
 .login-popup-button:hover {
   background-color: #677bc3;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="password"] {
+    -webkit-text-stroke-width: 2px;
+    letter-spacing: 2px;
+  }
 }

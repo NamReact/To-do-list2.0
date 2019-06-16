@@ -11,6 +11,7 @@ import "./index.css";
 
 import Login from "../LoginPage/index";
 import Dashboard from "../Dashboard/index";
+import ResetPassword from "../ResetPassword";
 
 class App extends React.Component {
   constructor(props) {
@@ -35,16 +36,19 @@ class App extends React.Component {
             exact
             render={() => <Login setToken={this.setToken} />}
           />
+          <Route
+            path="/reset/:token"
+            exact
+            render={props => {
+              return <ResetPassword match={props.match} />;
+            }}
+          />
 
-          {this.state.token ? (
-            <Route
-              path="/dashboard"
-              exact
-              render={() => <Dashboard token={this.state.token} />}
-            />
-          ) : (
-            <Redirect to="/" />
-          )}
+          <Route
+            path="/dashboard"
+            exact
+            render={() => <Dashboard token={this.state.token} />}
+          />
         </Router>
 
         {/*  <NavBar /> */}
