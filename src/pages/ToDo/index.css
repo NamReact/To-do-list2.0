@@ -4,6 +4,7 @@
 
 .todo-input-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   flex: 1;
   background-color: var(--grey);
@@ -13,11 +14,22 @@
 }
 
 .todo-input-wrapper {
+  margin-left: 20px;
   display: flex;
   align-items: center;
   border-radius: 3px;
   overflow: hidden;
   width: 70%;
+}
+
+.todo-title {
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  color: white;
+  font-size: 20px;
+  padding: 0 10px;
+  flex: 1;
 }
 
 .todo-input-wrapper > input {

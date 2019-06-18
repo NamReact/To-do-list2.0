@@ -7,25 +7,53 @@
 }
 
 .todolist-tasks-container {
-  margin: 50px 0 200px 30px;
-  width: 80%;
+  margin: 30px auto 200px auto;
+  width: 90%;
 }
 
 .todolist-task {
   display: flex;
-  padding: 15px;
+  overflow: hidden;
   width: 100%;
-  background-color: green;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
+  background-color: var(--dark-grey);
+  border-radius: 3px;
+  color: white;
+  font-weight: 500;
+}
+
+.todolist-task > div:nth-child(2) {
+  flex: 1;
+  padding: 15px;
+}
+
+.todolist-task > div:nth-child(1) {
+  padding: 15px 20px;
+  color: var(--light-grey);
+  border-right: 1px solid var(--grey);
+  cursor: pointer;
+}
+
+.todolist-task > div:nth-child(1):hover {
+  background-color: var(--light-grey);
+  color: white;
+}
+
+.todolist-check-done {
+  color: var(--green);
 }
 
 .todolist-delete-button {
-  margin-right: 20px;
-  border-right: 1px solid var(--dark-grey);
+  border-left: 1px solid var(--grey);
   cursor: pointer;
+  padding: 15px 20px;
+}
+
+.todolist-delete-button:hover {
+  background-color: var(--light-grey);
+  color: var(--red);
 }
 
 .todolist-done {
   color: var(--light-grey);
-  text-decoration: line-through;
 }

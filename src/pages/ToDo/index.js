@@ -25,9 +25,16 @@ const ToDO = () => {
           { headers: { authorization: `Bearer ${myContext.state.token}` } }
         );
         setAgenda(response.data);
+        setInput("");
       }
     } catch (error) {
       console.log(error.message);
+    }
+  };
+
+  const newTaskEnter = e => {
+    if (e.key === "Enter") {
+      return newTask();
     }
   };
 
@@ -63,8 +70,13 @@ const ToDO = () => {
       <div className="todo-container">
         <Calendar />
         <div className="todo-input-container">
+          <div className="todo-title">Tasks of the day</div>
           <div className="todo-input-wrapper">
-            <input value={input} onChange={e => setInput(e.target.value)} />
+            <input
+              value={input}
+              onChange={e => setInput(e.target.value)}
+              onKeyDown={e => newTaskEnter(e)}
+            />
             <div onClick={newTask}>+</div>
           </div>
         </div>

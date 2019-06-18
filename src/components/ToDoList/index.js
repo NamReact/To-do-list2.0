@@ -15,6 +15,9 @@ const ToDoList = props => {
         thisDateList = context.agenda.pages[i].tasks.map(task => {
           return task;
         });
+        thisDateList.sort((a, b) => {
+          return a.done - b.done;
+        });
         break;
       }
     }
@@ -35,7 +38,7 @@ const ToDoList = props => {
   };
 
   const taskDone = async e => {
-    const id = e.target.id;
+    const id = e.currentTarget.id;
     const response = await axios.post(
       "http://localhost:3001/agenda/update/task",
       {
@@ -51,17 +54,21 @@ const ToDoList = props => {
     listDisplay = thisDateList.map(({ title, _id, done }) => {
       return (
         <div key={_id} className="todolist-task">
+          <div id={_id} onClick={e => taskDone(e)}>
+            <i
+              className={
+                done ? "fas fa-check todolist-check-done" : "fas fa-check"
+              }
+            />
+          </div>
+          <div className={done ? "todolist-done" : null}>{title}</div>
           <div
             className="todolist-delete-button"
             id={_id}
             onClick={e => deleteTask(e)}
           >
-            delete
+            <i class="far fa-trash-alt" />
           </div>
-          <div id={_id} onClick={e => taskDone(e)}>
-            done
-          </div>
-          <div className={done ? "todolist-done" : null}>{title}</div>
         </div>
       );
     });
