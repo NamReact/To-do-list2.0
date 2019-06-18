@@ -7,7 +7,7 @@
 
 .reset-password-input-container {
   width: 32%;
-  background-color: #4b5391;
+  background-color: var(--grey);
   margin: auto;
   border-radius: 5px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
@@ -51,11 +51,11 @@
 }
 
 .reset-password-input-container input:hover {
-  border: 1px solid var(--blue);
+  border: 1px solid var(--dark-grey);
 }
 
 .reset-password-input-container input:focus {
-  border: 1px solid var(--blue);
+  border: 1px solid var(--dark-grey);
 }
 
 .reset-password-button {

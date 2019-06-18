@@ -1,0 +1,73 @@
+.calendar-container {
+  display: flex;
+  width: 100%;
+
+  margin: 0;
+  overflow: scroll;
+}
+
+.calendar-display {
+  flex: 1;
+  display: flex;
+}
+
+.calendar-date-container {
+  /* padding: 5px 0; */
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--grey);
+  cursor: pointer;
+  color: var(--light-grey);
+}
+
+.calendar-date-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--grey);
+  width: 80px;
+  border-radius: 20%;
+}
+
+.calendar-date-container:hover {
+  background-color: var(--dark-grey);
+  color: white;
+}
+
+.calendar-selected {
+  background-color: var(--dark-grey);
+  color: white;
+}
+
+.calendar-date-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--dark-grey);
+}
+
+.calendar-arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: 50px;
+  background-color: var(--dark-grey);
+  color: white;
+  cursor: pointer;
+}
+
+.calendar-arrow-container:hover {
+  background-color: var(--grey);
+}

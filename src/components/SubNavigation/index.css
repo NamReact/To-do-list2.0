@@ -1,0 +1,21 @@
+.subnavigation-container {
+  height: 100vh;
+  width: 250px;
+  background-color: var(--grey);
+}
+
+.subnavigation-container h4 {
+  margin: 0;
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.subnavigation-separator {
+  height: 1px;
+  width: 80%;
+  background-color: var(--green);
+  margin: 0 auto 20px auto;
+}

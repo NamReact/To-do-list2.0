@@ -1,0 +1,31 @@
+.todolist-container {
+  height: 100%;
+  overflow: scroll;
+  border-top: 1px solid var(--dark-grey);
+  border-left: 1px solid var(--dark-grey);
+  background-color: var(--grey);
+}
+
+.todolist-tasks-container {
+  margin: 50px 0 200px 30px;
+  width: 80%;
+}
+
+.todolist-task {
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+.todolist-delete-button {
+  margin-right: 20px;
+  border-right: 1px solid var(--dark-grey);
+  cursor: pointer;
+}
+
+.todolist-done {
+  color: var(--light-grey);
+  text-decoration: line-through;
+}

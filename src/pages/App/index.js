@@ -1,12 +1,6 @@
 import React from "react";
 import Cookies from "js-cookie";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  Redirect
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import "./index.css";
 
 import Login from "../LoginPage/index";
@@ -46,7 +40,6 @@ class App extends React.Component {
 
           <Route
             path="/dashboard"
-            exact
             render={() => <Dashboard token={this.state.token} />}
           />
         </Router>

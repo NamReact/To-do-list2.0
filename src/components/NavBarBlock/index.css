@@ -1,0 +1,69 @@
+.navbar-block-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 70px;
+  /* position: relative; */
+}
+
+.navbar-block {
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 75%;
+  background-color: var(--grey);
+  border-radius: 50%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.navbar-block:hover {
+  border-radius: 35%;
+}
+
+.navbar-hover-bar {
+  position: relative;
+  width: 1px;
+  background-color: var(--green);
+  z-index: 2;
+  top: 25px;
+  left: 0px;
+  height: 20px;
+}
+.navbar-selector-bar {
+  position: relative;
+  width: 1px;
+  background-color: var(--green);
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+}
+
+.navbar-hover-bubble {
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  position: absolute;
+  background-color: var(--dark-grey);
+  padding: 5px 15px;
+  border-radius: 3px;
+  left: 72px;
+  border: 1px solid var(--green);
+}
+
+.navbar-hover-bubble-arrow {
+  position: absolute;
+  left: -6px;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--dark-grey);
+  transform: rotate(45deg);
+  border-bottom: 1px solid var(--green);
+  border-left: 1px solid var(--green);
+}

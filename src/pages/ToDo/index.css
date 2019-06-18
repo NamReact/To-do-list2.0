@@ -1,0 +1,65 @@
+.todo-container {
+  flex: 1;
+}
+
+.todo-input-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  background-color: var(--grey);
+  padding: 12px 20px;
+  border-top: 1px solid var(--dark-grey);
+  border-left: 1px solid var(--dark-grey);
+}
+
+.todo-input-wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 70%;
+}
+
+.todo-input-wrapper > input {
+  outline: none;
+  border: none;
+  background-color: var(--dark-grey);
+  height: 40px;
+  flex: 1;
+  padding: 0 15px;
+  color: white;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.todo-input-wrapper > input:hover {
+  border: 1px solid black;
+}
+
+.todo-input-wrapper > input:focus {
+  border: 1px solid black;
+}
+
+.todo-input-wrapper > div {
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: var(--dark-grey);
+  color: var(--dark-green);
+  padding: 0 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-left: 1px solid var(--grey);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.todo-input-wrapper > div:hover {
+  background-color: var(--dark-green);
+  color: white;
+}
