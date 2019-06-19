@@ -70,7 +70,7 @@ class Login extends React.Component {
     }
     try {
       const response = await axios.post(
-        "http://localhost:3001/user/create",
+        "https://todolist-nam-back.herokuapp.com/user/create",
         this.state.input
       );
       this.setCookie(response.data);
@@ -92,7 +92,7 @@ class Login extends React.Component {
     }
     try {
       const response = await axios.post(
-        "http://localhost:3001/user/login",
+        "https://todolist-nam-back.herokuapp.com/user/login",
         this.state.input
       );
       this.setCookie(response.data);
@@ -108,9 +108,12 @@ class Login extends React.Component {
       return false;
     }
     try {
-      await axios.post("http://localhost:3001/user/forgot-password", {
-        email: this.state.input.email
-      });
+      await axios.post(
+        "https://todolist-nam-back.herokuapp.com/user/forgot-password",
+        {
+          email: this.state.input.email
+        }
+      );
       this.setPopup();
       return;
     } catch (error) {

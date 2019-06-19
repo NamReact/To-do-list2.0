@@ -35,10 +35,13 @@ class ResetPassword extends React.Component {
       return;
     }
     try {
-      await axios.post("http://localhost:3001/user/reset-password", {
-        token: this.props.match.params.token,
-        newPassword: this.state.newPassword
-      });
+      await axios.post(
+        "https://todolist-nam-back.herokuapp.com/user/reset-password",
+        {
+          token: this.props.match.params.token,
+          newPassword: this.state.newPassword
+        }
+      );
       alert(
         "Your password has been changed. You will be redirected to the login page"
       );

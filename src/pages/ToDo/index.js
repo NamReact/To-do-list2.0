@@ -17,7 +17,7 @@ const ToDO = () => {
     try {
       if (input) {
         const response = await axios.post(
-          "http://localhost:3001/agenda/create",
+          "https://todolist-nam-back.herokuapp.com/agenda/create",
           {
             date: myContext.state.selectedDate,
             title: input
@@ -40,9 +40,12 @@ const ToDO = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/agenda", {
-        headers: { authorization: `Bearer ${myContext.state.token}` }
-      });
+      const response = await axios.get(
+        "https://todolist-nam-back.herokuapp.com/agenda",
+        {
+          headers: { authorization: `Bearer ${myContext.state.token}` }
+        }
+      );
       setAgenda(response.data);
     } catch (error) {
       console.log(error.message);
