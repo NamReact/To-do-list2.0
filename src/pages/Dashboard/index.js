@@ -14,7 +14,7 @@ class Dashboard extends React.PureComponent {
     selectedBlock: "Home",
     selectedNavItem: "To do list",
     selectedDate: "",
-    token: null
+    token: this.props.token
   };
 
   render() {

@@ -53,9 +53,7 @@ const ToDO = () => {
   };
 
   useEffect(() => {
-    if (myContext.state.token) {
-      fetchData();
-    }
+    fetchData();
 
     // eslint-disable-next-line
   }, []);
