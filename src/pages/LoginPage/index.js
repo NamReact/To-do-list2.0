@@ -59,7 +59,7 @@ class Login extends React.Component {
   };
 
   setCookie = token => {
-    Cookies.set("todolist", token);
+    Cookies.set("todolist2.0-nam", token);
     this.props.setToken(token);
     return;
   };

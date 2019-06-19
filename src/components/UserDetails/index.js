@@ -73,7 +73,7 @@ const UserDetails = () => {
           { headers: { authorization: `Bearer ${context.state.token}` } }
         );
         alert("You will now be disconnected. Please log in again.");
-        Cookies.remove("todolist");
+        Cookies.remove("todolist2.0-nam");
         setRedirect(true);
         return;
       }
