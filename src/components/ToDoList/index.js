@@ -25,7 +25,7 @@ const ToDoList = props => {
   let listDisplay = null;
 
   const deleteTask = async e => {
-    const id = e.target.id;
+    const id = e.currentTarget.id;
     const response = await axios.post(
       "http://localhost:3001/agenda/delete/task",
       {
@@ -67,7 +67,7 @@ const ToDoList = props => {
             id={_id}
             onClick={e => deleteTask(e)}
           >
-            <i class="far fa-trash-alt" />
+            <i className="far fa-trash-alt" />
           </div>
         </div>
       );

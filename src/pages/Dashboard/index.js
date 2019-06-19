@@ -12,7 +12,7 @@ export const DashboardContext = React.createContext();
 class Dashboard extends React.PureComponent {
   state = {
     selectedBlock: "Home",
-    selectedNavItem: "",
+    selectedNavItem: "To do list",
     selectedDate: "",
     token: null
   };

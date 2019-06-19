@@ -24,7 +24,7 @@ class App extends React.Component {
     return (
       <div className="app-container">
         <Router>
-          {this.state.token && <Redirect from="/" to="/dashboard" />}
+          {this.state.token && <Redirect from="/" to="/dashboard/todolist" />}
           <Route
             path="/"
             exact

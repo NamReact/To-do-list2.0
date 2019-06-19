@@ -76,12 +76,12 @@ const Calendar = () => {
     );
   });
 
-  const didRun = useRef(false);
+  const didRunCalendar = useRef(false);
 
   useEffect(() => {
-    if (!didRun.current) {
+    if (!didRunCalendar.current) {
       myContext.setState({ selectedDate: today });
-      didRun.current = true;
+      didRunCalendar.current = true;
     }
   });
 

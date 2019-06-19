@@ -1,0 +1,6 @@
+.settings-container {
+  display: flex;
+  flex: 1;
+  border-left: 1px solid var(--dark-grey);
+  background-color: var(--grey);
+}
