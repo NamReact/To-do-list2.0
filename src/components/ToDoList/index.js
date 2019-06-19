@@ -27,7 +27,7 @@ const ToDoList = props => {
   const deleteTask = async e => {
     const id = e.currentTarget.id;
     const response = await axios.post(
-      "http://localhost:3001/agenda/delete/task",
+      "https://todolist-nam-back.herokuapp.com/agenda/delete/task",
       {
         date: props.match.params.date,
         id: id
@@ -40,7 +40,7 @@ const ToDoList = props => {
   const taskDone = async e => {
     const id = e.currentTarget.id;
     const response = await axios.post(
-      "http://localhost:3001/agenda/update/task",
+      "https://todolist-nam-back.herokuapp.com/agenda/update/task",
       {
         date: props.match.params.date,
         id: id

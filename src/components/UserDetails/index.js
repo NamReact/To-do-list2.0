@@ -25,9 +25,12 @@ const UserDetails = () => {
 
   const getUser = async () => {
     if (context.state.token) {
-      const response = await axios.get("http://localhost:3001/user", {
-        headers: { authorization: `Bearer ${context.state.token}` }
-      });
+      const response = await axios.get(
+        "https://todolist-nam-back.herokuapp.com/user",
+        {
+          headers: { authorization: `Bearer ${context.state.token}` }
+        }
+      );
       setFirstName(response.data.firstName ? response.data.firstName : "");
       setLastName(response.data.lastName ? response.data.lastName : "");
       setEmail(response.data.email ? response.data.email : "");
@@ -48,7 +51,7 @@ const UserDetails = () => {
       return;
     }
     await axios.post(
-      "http://localhost:3001/user/update",
+      "https://todolist-nam-back.herokuapp.com/user/update",
       {
         firstName: firstName,
         lastName: lastName,
@@ -62,7 +65,7 @@ const UserDetails = () => {
     try {
       if (checkEmptyNewPassword === false && checkEmptyPassword === false) {
         await axios.post(
-          "http://localhost:3001/user/change-password",
+          "https://todolist-nam-back.herokuapp.com/user/change-password",
           {
             currentPassword: currentPassword,
             newPassword: newPassword
