@@ -9,7 +9,7 @@ import ResetPassword from "../ResetPassword";
 
 class App extends React.Component {
   constructor(props) {
-    const userData = Cookies.get("todolist");
+    const userData = Cookies.get("todolist2.0-nam");
     super(props);
     this.state = {
       token: userData || null
