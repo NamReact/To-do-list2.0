@@ -1,6 +1,12 @@
 .navbar-container {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   min-width: 70px;
   background-color: var(--dark-grey);
+}
+
+.navbar-project-container {
+  flex: 1;
   overflow: scroll;
 }

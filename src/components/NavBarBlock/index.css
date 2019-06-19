@@ -3,7 +3,6 @@
   justify-content: flex-end;
   width: 100%;
   height: 70px;
-  /* position: relative; */
 }
 
 .navbar-block {
@@ -34,6 +33,7 @@
   left: 0px;
   height: 20px;
 }
+
 .navbar-selector-bar {
   position: relative;
   width: 1px;

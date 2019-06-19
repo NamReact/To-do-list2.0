@@ -1,5 +1,6 @@
 import React from "react";
 import NavBarBlock from "../NavBarBlock/index";
+import AddProject from "../AddProject/index";
 import "./index.css";
 
 class NavBar extends React.Component {
@@ -7,11 +8,11 @@ class NavBar extends React.Component {
     return (
       <div className="navbar-container">
         <NavBarBlock id="Home" />
-        <NavBarBlock id="Test" />
-        <NavBarBlock id="Test2" />
-        <NavBarBlock id="Test3" />
-        <NavBarBlock id="Test4" />
-        <NavBarBlock id="Test5" />
+        <div className="navbar-project-container">
+          <NavBarBlock id="Project test 1" />
+          <NavBarBlock id="Project test 2" />
+        </div>
+        <AddProject />
       </div>
     );
   }
