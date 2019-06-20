@@ -3,3 +3,22 @@
   height: 100vh;
   display: flex;
 }
+
+.dashboard-log-out {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--light-grey);
+  height: 40px;
+  width: 230px;
+  margin: 0 auto 5px auto;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dashboard-log-out:hover {
+  color: var(--red);
+}

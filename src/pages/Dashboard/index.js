@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Redirect, Link } from "react-router-dom";
+import Cookies from "js-cookie";
 import NavBar from "../../components/NavBar";
 import SubNavigation from "../../components/SubNavigation";
 import NavItem from "../../components/NavItem";
@@ -15,6 +16,11 @@ class Dashboard extends React.PureComponent {
     selectedNavItem: "To do list",
     selectedDate: "",
     token: this.props.token
+  };
+
+  logOut = () => {
+    Cookies.remove("todolist2.0-nam");
+    this.props.setToken("");
   };
 
   render() {
@@ -39,6 +45,9 @@ class Dashboard extends React.PureComponent {
                 <Link to="/dashboard/settings">
                   <NavItem id="Settings" />
                 </Link>
+                <div className="dashboard-log-out" onClick={this.logOut}>
+                  Log out
+                </div>
               </div>
             ) : null}
           </SubNavigation>

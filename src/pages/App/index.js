@@ -40,11 +40,11 @@ class App extends React.Component {
 
           <Route
             path="/dashboard"
-            render={() => <Dashboard token={this.state.token} />}
+            render={() => (
+              <Dashboard token={this.state.token} setToken={this.setToken} />
+            )}
           />
         </Router>
-
-        {/*  <NavBar /> */}
       </div>
     );
   }
