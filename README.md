@@ -75,7 +75,7 @@ A lot can be improve but overall refactoring for a cleaner code and better struc
 
 - Project management function is not implemented yet although some bases are already coded in (add project button, project bubble in the left navigation bar...)
 
-- Once project management is implemented, automaticaaly add tasks to the to do list depending on the tasks assign through projects.
+- Once project management is implemented, automaticaaly add tasks to the to do list depending on assigned tasks through projects.
 
 - Chat function.
 
