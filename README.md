@@ -18,7 +18,6 @@
 This to do list is my first attempt at using hooks and context.
 
 The login page and everyting involved with it is still code with regular class component and state.
-for everything else I tried to use as much function component with hooks as possible.
 
 ## Technologies
 
@@ -40,7 +39,7 @@ https://todo-list-nam.herokuapp.com
 
 ## Features
 
-###Login page###
+### Login page
 
 ![login-page](https://user-images.githubusercontent.com/49146106/59919703-712eb580-9428-11e9-90eb-131e731367e4.png)
 
@@ -50,14 +49,14 @@ https://todo-list-nam.herokuapp.com
 - Check for duplicate email during new account creation.
 - Forgot my password function.
 
-###TODO List###
+### TODO List
 
 - Automatically launch on today's date page.
 - Add and remove tasks.
-- Can check for task done.
+- Change task status to done or not done.
 - Tasks done turn grey and goes to the bottom of the list.
 
-###User settings page###
+### User settings page
 
 ![setting-page](https://user-images.githubusercontent.com/49146106/59919842-d5ea1000-9428-11e9-8bad-c571e8fd6cbb.png)
 
@@ -66,7 +65,7 @@ https://todo-list-nam.herokuapp.com
 - Change password.
 - Delete account.
 
-###Possible improvement###
+### Possible improvement
 
 A lot can be improve but overall refactoring for a cleaner code and better structure.
 
@@ -75,7 +74,7 @@ A lot can be improve but overall refactoring for a cleaner code and better struc
 
 - Project management function is not implemented yet although some bases are already coded in (add project button, project bubble in the left navigation bar...)
 
-- Once project management is implemented, automaticaaly add tasks to the to do list depending on the tasks assign through projects.
+- Once project management is implemented, automaticaaly add tasks to the to do list depending on the assigned tasks through projects.
 
 - Chat function.
 
