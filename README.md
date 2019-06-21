@@ -22,6 +22,8 @@ The login page and everyting involved with it is still coded with regular class 
 ## Technologies
 
 - axios - version 0.19.0
+- js-cookie - version 2.2.0
+- moment - version 2.24.0
 - React.js - version 16.8.6
 - react-router-dom - version 5.0.1
 
@@ -74,7 +76,7 @@ A lot can be improved but overall refactoring for a cleaner code and better stru
 
 - Project management function is not implemented yet although some bases are already coded in (add project button, project bubble in the left navigation bar...)
 
-- Once project management is implemented, automaticaaly add tasks to the to do list depending on the assigned tasks through projects.
+- Once project management is implemented, automatically add tasks to the to do list depending on the assigned tasks through projects.
 
 - Chat function.
 
