@@ -17,7 +17,7 @@
 
 This to do list is my first attempt at using hooks and context.
 
-The login page and everyting involved with it is still code with regular class component and state.
+The login page and everyting involved with it is still coded with regular class component and state.
 
 ## Technologies
 
@@ -67,7 +67,7 @@ https://todo-list-nam.herokuapp.com
 
 ### Possible improvement
 
-A lot can be improve but overall refactoring for a cleaner code and better structure.
+A lot can be improved but overall refactoring for a cleaner code and better structure.
 
 - Add a bubble that signal how many tasks are left to be done.
 - Automatically move unfinished tasks to tomorrow.
