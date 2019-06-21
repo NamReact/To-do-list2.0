@@ -17,7 +17,12 @@
 
 This to do list is my first attempt at using hooks and context.
 
+<<<<<<< HEAD
 The login page and everyting involved with it is still code with regular class component and state.
+=======
+The login page and everyting involved with it are still coded with regular class component and state.
+for everything else I tried to use as much function component with hooks as possible.
+>>>>>>> 6badf7a4cd109dd3e4cd969ad4d9323d3bd30dc6
 
 ## Technologies
 
@@ -39,7 +44,11 @@ https://todo-list-nam.herokuapp.com
 
 ## Features
 
+<<<<<<< HEAD
 ### Login page
+=======
+### Login page ###
+>>>>>>> 6badf7a4cd109dd3e4cd969ad4d9323d3bd30dc6
 
 ![login-page](https://user-images.githubusercontent.com/49146106/59919703-712eb580-9428-11e9-90eb-131e731367e4.png)
 
@@ -49,14 +58,22 @@ https://todo-list-nam.herokuapp.com
 - Check for duplicate email during new account creation.
 - Forgot my password function.
 
+<<<<<<< HEAD
 ### TODO List
+=======
+### TODO List ###
+>>>>>>> 6badf7a4cd109dd3e4cd969ad4d9323d3bd30dc6
 
 - Automatically launch on today's date page.
 - Add and remove tasks.
 - Change task status to done or not done.
 - Tasks done turn grey and goes to the bottom of the list.
 
+<<<<<<< HEAD
 ### User settings page
+=======
+### User settings page ###
+>>>>>>> 6badf7a4cd109dd3e4cd969ad4d9323d3bd30dc6
 
 ![setting-page](https://user-images.githubusercontent.com/49146106/59919842-d5ea1000-9428-11e9-8bad-c571e8fd6cbb.png)
 
@@ -65,7 +82,11 @@ https://todo-list-nam.herokuapp.com
 - Change password.
 - Delete account.
 
+<<<<<<< HEAD
 ### Possible improvement
+=======
+### Possible improvement ###
+>>>>>>> 6badf7a4cd109dd3e4cd969ad4d9323d3bd30dc6
 
 A lot can be improve but overall refactoring for a cleaner code and better structure.
 
@@ -74,7 +95,11 @@ A lot can be improve but overall refactoring for a cleaner code and better struc
 
 - Project management function is not implemented yet although some bases are already coded in (add project button, project bubble in the left navigation bar...)
 
+<<<<<<< HEAD
 - Once project management is implemented, automaticaaly add tasks to the to do list depending on the assigned tasks through projects.
+=======
+- Once project management is implemented, automaticaaly add tasks to the to do list depending on assigned tasks through projects.
+>>>>>>> 6badf7a4cd109dd3e4cd969ad4d9323d3bd30dc6
 
 - Chat function.
 
