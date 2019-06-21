@@ -1,6 +1,8 @@
-# Short URL
+![todo-list](https://user-images.githubusercontent.com/49146106/59919315-64f62880-9427-11e9-9da3-eb9876cfdb6b.png)
 
-> This is part of my full stack final exam.
+# To do list
+
+> A fancy to do list with project management.
 
 ## Table of contents
 
@@ -13,9 +15,10 @@
 
 ## General info
 
-A simple short URL website. I dont have a domain name so some URLs might end up longer.
+This to do list is my first attempt at using hooks and context.
 
-This is only the front end. You can find the back end [here](https://github.com/NamReact/short-url-nam-bui-server)
+The login page and everyting involved with it is still code with regular class component and state.
+for everything else I tried to use as much function component with hooks as possible.
 
 ## Technologies
 
@@ -33,19 +36,55 @@ Use `npm start`to launch the website.
 
 You can also visit the demo website :
 
-https://short-url-nam-bui.herokuapp.com/
+https://todo-list-nam.herokuapp.com
 
 ## Features
 
-- Add new URL to be shortened to the API
-- Redirect to the original website when using the short URL
-- Check for valid URL format and display an error bubble if a wrong format is used.
-- Redirect back to the home page is a wrong short url is used. An alert informs the user.
+###Login page###
+
+![login-page](https://user-images.githubusercontent.com/49146106/59919703-712eb580-9428-11e9-90eb-131e731367e4.png)
+
+- Check for valid email format and display an error bubble to inform user.
+- Check for empty password and display an error bubble to inform user.
+- Error message in case of wrong identification.
+- Check for duplicate email during new account creation.
+- Forgot my password function.
+
+###TODO List###
+
+- Automatically launch on today's date page.
+- Add and remove tasks.
+- Can check for task done.
+- Tasks done turn grey and goes to the bottom of the list.
+
+###User settings page###
+
+![setting-page](https://user-images.githubusercontent.com/49146106/59919842-d5ea1000-9428-11e9-8bad-c571e8fd6cbb.png)
+
+- Add/change first name and last name.
+- Change email.
+- Change password.
+- Delete account.
+
+###Possible improvement###
+
+A lot can be improve but overall refactoring for a cleaner code and better structure.
+
+- Add a bubble that signal how many tasks are left to be done.
+- Automatically move unfinished tasks to tomorrow.
+
+- Project management function is not implemented yet although some bases are already coded in (add project button, project bubble in the left navigation bar...)
+
+- Once project management is implemented, automaticaaly add tasks to the to do list depending on the tasks assign through projects.
+
+- Chat function.
 
 ## Status
 
-Project is _finished_.
+Project is _in progress_.
 
 ## Inspiration
 
-Project inspired by websites like https://bitly.com/ and https://tiny.cc/.
+The design is greatly inspired from https://discordapp.com/.
+
+The project management aspect is based on websites such as https://trello.com/.
