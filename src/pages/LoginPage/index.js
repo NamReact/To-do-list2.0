@@ -86,6 +86,12 @@ class Login extends React.Component {
     }
   };
 
+  registerEnter = e => {
+    if (e.key === "Enter") {
+      return this.register();
+    }
+  };
+
   login = async () => {
     if (this.identificationCheck() === false) {
       return;
@@ -98,6 +104,12 @@ class Login extends React.Component {
       this.setCookie(response.data);
     } catch (error) {
       this.setState({ wrongEmail: true, wrongPassword: true });
+    }
+  };
+
+  loginEnter = e => {
+    if (e.key === "Enter") {
+      return this.login();
     }
   };
 
@@ -194,6 +206,11 @@ class Login extends React.Component {
             onChange={this.setInput}
             style={
               this.state.wrongPassword ? { border: "2px solid #F26C82" } : null
+            }
+            onKeyDown={
+              this.state.register
+                ? e => this.registerEnter(e)
+                : e => this.loginEnter(e)
             }
           />
 
