@@ -16,7 +16,7 @@ body {
 }
 
 .login-input-container {
-  width: 32%;
+  width: 460px;
   background-color: var(--grey);
   margin: auto;
   border-radius: 5px;
@@ -185,7 +185,7 @@ span:hover {
   position: absolute;
   box-sizing: border-box;
   z-index: 4;
-  width: 28.5%;
+  width: 410px;
   border-radius: 4px;
   top: 33%;
   left: 35.8%;
