@@ -9,4 +9,5 @@
 .navbar-project-container {
   flex: 1;
   overflow: scroll;
+  scrollbar-width: none;
 }

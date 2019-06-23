@@ -1,6 +1,7 @@
 .todolist-container {
   height: 100%;
   overflow: scroll;
+  scrollbar-width: none;
   border-top: 1px solid var(--dark-grey);
   border-left: 1px solid var(--dark-grey);
   background-color: var(--grey);
